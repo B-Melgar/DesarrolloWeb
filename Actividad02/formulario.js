@@ -23,9 +23,6 @@
       return false;
     }
 
-    // Aquí podrías realizar validaciones más específicas sobre los datos ingresados
-    // como longitud, formato, etc.
-
     alert('¡Formulario enviado correctamente!');
     return true;
   }
