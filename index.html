@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Inscripción</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <script src="formulario.js"></script>
+  <h1>Formulario de Inscripción</h1>
+  <form id="formulario" onsubmit="return validarFormulario()" novalidate>
+
+    <!-- Datos Generales -->
+    <h2>Datos Generales</h2>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required>
+
+    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+    <input type="date" id="fechaNacimiento" required>
+
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" required>
+
+    <label for="sexo">Sexo:</label>
+    <select id="sexo" required>
+      <option value="">Seleccionar</option>
+      <option value="masculino">Masculino</option>
+      <option value="femenino">Femenino</option>
+      <option value="otro">Otro</option>
+    </select>
+
+    <!-- Datos de Pago con Tarjeta -->
+    <h2>Datos de Pago con Tarjeta</h2>
+    <label for="numTarjeta">Número de Tarjeta:</label>
+    <input type="text" id="numTarjeta" required>
+
+    <label for="titularTarjeta">Titular de la Tarjeta:</label>
+    <input type="text" id="titularTarjeta" required>
+
+    <label for="fechaExpiracion">Fecha de Expiración:</label>
+    <input type="month" id="fechaExpiracion" required>
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" required>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
